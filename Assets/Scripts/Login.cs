@@ -12,8 +12,13 @@ public class Login : MonoBehaviour
 
 
 
-    public void Submit()
+    public void Loggin()
     {
         StartCoroutine(Main.instance.web.Login(usernameInput.text, passwordInput.text));
+    }
+
+    public void Register()
+    {
+        StartCoroutine(Main.instance.web.RegisterUser(usernameInput.text, passwordInput.text));
     }
 }
